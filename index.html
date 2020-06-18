@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Machine Learning Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Adsuspencor<br>Project</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Data</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why Two Datasets</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Models</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Features</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Forests</a>
+  </div>
+</nav>
+
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Predicting Loan Repayment with Machine Learning.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>The Data</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+<div class='tableauPlaceholder' id='viz1589920523051' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BootCampSpot-Project3-1stfile&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BootCampSpot-Project3-1stfile&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BootCampSpot-Project3-1stfile&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589920523051');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </div>
+  
+
+  
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Why Two Datasets</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>You Probably noticed that we are showing off two Wildly different datasets. We decided to this mostly because of an early mistake.</p>
+    <p>We started out knowing we wanted to work with loan data, mostly Housing loan data. So we visited Kaggle and found a couple of options and after some discussion and poor 
+        attempt at eyeballing how many loans weren't paid back in one dataset (*cough cough* Spencer *cough*) we decided to go with the larger data set you saw above. We then went to work and created a classification 
+        model using random forest modeling. At this point we decided to take a look at the scores you will see below and we were not very impressed. After this disappointment, We decided to pivot 
+        and create a model from the other dataset to see if we could do better. Well after to putting together two models we decided to add this portion of the project were we compare and contrast the results
+        of our two models. So in the next section you will see a cautionary tail about picking the right dataset to create accurate models.
+    </p>
+  </div>
+  
+
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Our Models</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Small Datasets Vs. Large Datasets</p>
+    <p>Below we add evidence to what we have been told about picking datasets for Machine Learning based more on the split between negative and positive outcomes and not necessarily based on
+        the size of the dataset. We also see a great example of how data is labeled can lead to confusion down the line.
+    </p>
+    <p><b>Our results in full living color.</b>:</p>
+  </div>
+
+ 
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/RandomForestCharts/LargeDataScores.png" alt="LargeDataScores" style="width:100%">
+        <div class="w3-container">
+          
+          <h3 class="w3-opacity">Large Dataset Classification Report</h3>
+          <p>As you can see from the scores our model does a great job of predicting people who have back their loans(negative not fully paid), but when we look at how accurate it is 
+              at predicting that someone will not pay back their loans(positive not fully paid(I'm still not entirely sure I have that right)) out scores are very low. This makes sense since 
+              the model has around 6000 values that come back negative and only about 1500 values that are positive.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/RandomForestCharts/SmallDataScores.png" alt="SmallDataScores" style="width:100%">
+        <div class="w3-container">
+          
+          <h3 class="w3-opacity">Small Dataset Classification Report</h3>
+          <p>Here we are looking at the smaller dataset and as you can see our scoring has gotten much better most likely because instead of having roughly 18% of our dataset being negative
+                roughly 33% of our dataset covers negative values. Now some Jeffsums to fill up the container. Checkmate... Life finds a way. What do they got in there? King Kong? 
+                Hey, take a look at the earthlings. Goodbye! Must go faster.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-grayscale"></div>
+        <div class="w3-col m6 w3-margin-bottom">
+            <div class="w3-light-grey">
+                <img src="/RandomForestCharts/LargeDataPie.png" alt="LargeDataPie" style="width:100%">
+            <div class="w3-container">
+          
+            <h3 class="w3-opacity">Large Dataset Features of Importance</h3>
+             <p>This shows how much weight our model puts on item in the model. Interestingly many of the features seem to hold weight in our large model. More on These Weights Below</p>
+            </div>
+        </div>
+    </div>
+      <div class="w3-col m6 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="/RandomForestCharts/SmallDataPie.png" alt="SmallDataPie" style="width:100%">
+          <div class="w3-container">
+            <h3 class="w3-opacity">Small Dataset Features of Importance</h3>
+            <p>While our smaller dataset's model shows more variance in the importance of each variable included in its construction.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+ 
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Important Features</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The graphs below break the data into five bucket categories based upon the percentile it falls into pertaining to a particular piece of the data such as debt to income or FICO score. This was done to visually show correlation between specific data points and compare to the feature of importance breakdown. </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class='tableauPlaceholder' id='viz1590108627338' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;DTI&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='languages_test&#47;DTI' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;DTI&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590108627338');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class='tableauPlaceholder' id='viz1590109270830' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;Income&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='languages_test&#47;Income' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;Income&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590109270830');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class='tableauPlaceholder' id='viz1590109533327' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;FICO&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='languages_test&#47;FICO' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;FICO&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590109533327');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class='tableauPlaceholder' id='viz1590241675785' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;DTIFICO2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='languages_test&#47;DTIFICO2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;DTIFICO2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590241675785');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>         
+    </div>
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class='tableauPlaceholder' id='viz1590241605848' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;IncFICO&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='languages_test&#47;IncFICO' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;la&#47;languages_test&#47;IncFICO&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590241605848');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>   
+    </div>
+  </div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Forests</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+      <div class="w3-section">
+        <h3 class="w3-opacity">Large Dataset</h3>
+       <img src = "/RandomForestCharts/tree.dot.png" alt="largeDataTree" href = "RandomForestCharts/largeDataTree" style = "width:100%">
+      </div>
+      <div class="w3-section">
+        <h3 class="w3-opacity">Small Dataset</h3>
+        <img src = "/RandomForestCharts/smalltree.dot.png" alt="smallDataTree" href = "RandomForestCharts/smallDataTree" style = "width:100%">
+      </div>
+      <div class="w3-section">
+      
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
